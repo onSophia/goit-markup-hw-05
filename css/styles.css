@@ -683,6 +683,40 @@ a {
     fill: transparent;
 }
 
+.visually-hidden:checked .form-label-span {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+.form-checkbox-label-a {
+    color: #4d5ae5;
+}
+
+.form-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #4D5AE5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:hover {
+    background-color: #3540c0;
+}
+
+.form-button:focus {
+    background-color: #3540c0;
+}
+
 .info {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
