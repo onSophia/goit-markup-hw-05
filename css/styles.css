@@ -524,6 +524,8 @@ a {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .modal {
@@ -541,7 +543,11 @@ a {
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
+    justify-content: center;
+    align-items: center;
 }
+
+.model-form {}
 
 .modal-button {
     position: absolute;
@@ -594,6 +600,14 @@ a {
 
 .modal-form-div {
     margin-bottom: 8px;
+}
+
+.modal-form-div input:focus svg {
+    fill: #4D5AE5;
+}
+
+.modal-form-div input:focus::placeholder {
+    fill: #4D5AE5;
 }
 
 .modal-form-label {
@@ -657,9 +671,6 @@ a {
 }
 
 .model-form {
-    padding-left: 720px;
-    padding-top: 230px;
-    padding-right: 720px;
     justify-content: center;
     align-items: center;
 }
