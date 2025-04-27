@@ -477,7 +477,8 @@ input {
 }
 
 .footer-subscribe-form {
-    gap: "24px";
+    display: flex;
+    gap: 24px;
 }
 
 .footer-subscribe-input {
