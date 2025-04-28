@@ -692,7 +692,7 @@ input {
     margin-bottom: 24px;
 }
 
-.visually-hidden .sikret {
+.visually-hidden .sikret:checked {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
