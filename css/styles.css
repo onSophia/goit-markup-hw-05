@@ -692,6 +692,12 @@ input {
     margin-bottom: 24px;
 }
 
+input:checked+label>span {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
 .sikret:checked {
     background-color: #404bbf;
     border: none;
