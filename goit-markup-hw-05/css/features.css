@@ -1,0 +1,41 @@
+.description {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.description-ul {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+}
+
+.description-li {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.iconka {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+}
+
+.description-head {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.description-title {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
