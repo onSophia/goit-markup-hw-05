@@ -6,6 +6,8 @@
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Базовий прихований стан */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -30,8 +32,8 @@
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
+    /* Видалено transition: transform..., оскільки transform статичний */
 }
 
 .modal-button {
@@ -63,6 +65,7 @@
 }
 
 .modal-svg {
+    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -73,7 +76,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-bottom: 16px
+    margin-bottom: 16px;
 }
 
 .model-form {
@@ -83,14 +86,6 @@
 
 .modal-form-div {
     margin-bottom: 8px;
-}
-
-.modal-form-div input:focus svg {
-    fill: #4D5AE5;
-}
-
-.modal-form-div input:focus::placeholder {
-    fill: #4D5AE5;
 }
 
 .modal-form-label {
@@ -162,25 +157,8 @@
     border-color: #4D5AE5;
 }
 
-.form-checkbox-label-a {
-    color: #4d5ae5;
-    text-decoration: underline;
-}
-
 .modal-form-checkbox {
     margin-bottom: 24px;
-}
-
-input:checked+label>span {
-    background-color: #404bbf;
-    border: none;
-    fill: #F4F4FD;
-}
-
-.sikret:checked {
-    background-color: #404bbf;
-    border: none;
-    fill: #F4F4FD;
 }
 
 .form-checkbox-label {
@@ -203,7 +181,7 @@ input:checked+label>span {
     margin-right: 8px;
 }
 
-.visually-hidden:checked .form-label-span {
+.sr-only:checked+.form-checkbox-label .form-label-span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
@@ -211,6 +189,7 @@ input:checked+label>span {
 
 .form-checkbox-label-a {
     color: #4d5ae5;
+    text-decoration: underline;
 }
 
 .form-buttonn {
