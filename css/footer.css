@@ -10,8 +10,6 @@
 
 .containerr-footer {
     margin-right: 120px;
-    padding-left: 156px;
-    padding-right: 120px;
 }
 
 .logoj {
@@ -79,7 +77,7 @@
 }
 
 .footer-subscribe {
-    padding-left: 80px;
+    margin-left: auto;
 }
 
 .footer-subscribe-p {
@@ -102,16 +100,22 @@
     border: 1px solid #ffffff;
     background-color: transparent;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-input::placeholder {
     color: #ffffff;
+}
+
+.footer-subscribe-input:focus {
+    border-color: #31d0aa;
+    outline: none;
 }
 
 .footer-subscribe-button {
@@ -131,6 +135,12 @@
     border: none;
     border-radius: 4px;
     padding: 8px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+    background-color: #31d0aa;
 }
 
 .footer-subscribe-svg {
